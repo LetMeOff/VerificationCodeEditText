@@ -20,7 +20,7 @@ allprojects {
 
 ```
 dependencies {
-    implementation 'com.github.LetMeOff:VerificationCodeEditText:1.0.0'
+    implementation 'com.github.LetMeOff:VerificationCodeEditText:v1.0.0'
 }
 ```
 
