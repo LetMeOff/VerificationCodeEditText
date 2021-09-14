@@ -1,14 +1,24 @@
 package com.zjh.verification
 
+import android.annotation.SuppressLint
 import android.content.Context
+import android.graphics.Canvas
 import android.graphics.Color
 import android.graphics.Paint
 import android.graphics.drawable.Drawable
+import android.graphics.drawable.StateListDrawable
+import android.text.TextUtils
 import android.util.AttributeSet
+import android.view.Choreographer
+import android.view.KeyEvent
+import android.view.MotionEvent
 import android.view.View
+import android.view.inputmethod.EditorInfo
+import android.view.inputmethod.InputConnection
+import android.view.inputmethod.InputMethodManager
 
 /**
- *  desc :
+ *  desc : 自定义验证码输入框
  *  @author zjh
  *  on 2021/9/14
  */

@@ -2,7 +2,8 @@ package com.zjh.verification
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.zjh.verificationedit.databinding.ActivityMainBinding
+import android.util.Log
+import com.zjh.verification.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
@@ -15,5 +16,17 @@ class MainActivity : AppCompatActivity() {
 
         setContentView(binding.root)
 
+        //输入完成监听
+        binding.verificationEdit.setOnEditCompleteListener(object :
+            VerificationCodeEditText.OnEditCompleteListener {
+            override fun onEditComplete(text: String) {
+                Log.d(TAG, "输入完成 : $text")
+            }
+        })
+
+    }
+
+    companion object{
+        const val TAG = "VerificationEdit"
     }
 }

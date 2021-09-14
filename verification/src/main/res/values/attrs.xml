@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="VerificationCodeEditText">
+        <!-- 文字大小-->
+        <attr name="android:textSize" />
+        <!-- 文字颜色-->
+        <attr name="android:textColor" />
+        <!-- 文字是否加粗 -->
+        <attr name="isBoldText" format="boolean" />
+        <!-- 如果是密码类型，展示的内容 比如* -->
+        <attr name="passwordText" format="string" />
+        <!-- 输入的文字的个数 -->
+        <attr name="inputCount" format="integer" />
+        <!-- 文字之间的间距 -->
+        <attr name="space" format="dimension" />
+        <!-- 是否保持文字正方形 -->
+        <attr name="isSquare" format="boolean" />
+        <!-- 文字的背景 -->
+        <attr name="textBackground" format="reference" />
+        <!-- 是否是密码 -->
+        <attr name="isPassword" format="boolean" />
+        <!-- 光标样式 -->
+        <attr name="cursorDrawable" format="reference" />
+        <!-- 光标宽度 -->
+        <attr name="cursorDrawableWidth" format="dimension" />
+        <!-- 光标高度 -->
+        <attr name="cursorDrawableHeight" format="dimension" />
+    </declare-styleable>
+</resources>
